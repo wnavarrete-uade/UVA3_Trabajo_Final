@@ -13,7 +13,7 @@ main{
     width: 100%;
 }
 
-.main_title__container{
+/* .main_title__container{
     width:100%;
     display: flex;
     justify-content: center;
@@ -23,8 +23,8 @@ main{
    
     margin-top: 60px;
 
-}
-
+} */
+/* 
 .home__container{
   
     flex-direction: row;
@@ -41,15 +41,13 @@ main{
     justify-content: start;
     align-items: start;
     width:40%;
- 
     height: 80%;
     box-sizing: border-box;
     gap:20px;
-    
-}
+} */
 
 
-.subtitle__container h2 {
+/* .subtitle__container h2 {
     font-size: 25px;
 
    
@@ -72,21 +70,17 @@ main{
 .slogan__container h3 {
     font-size: 25px;
     font-weight: 200;
-
-    width: 80%;
-   
-   
+    width: 80%;   
 }
-
 
 .button_container_main{
     height:45px;
     width:110px;
     background-color:#7922E2;
     border-radius: 5px;
-}
+} */
 
-.button_container_main a {
+/* .button_container_main a {
     background-color: transparent;
     font-weight: bold;
     width: 100%;
@@ -94,10 +88,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .background-image {
-    background-image: url('assets/img/home/img_header_home.png');
+    background-image: url('assets/img/home/img_home.png');
     background-size: cover;
     background-position: center;
 }
@@ -112,7 +106,7 @@ main{
       
     }
 
-    .main_title__container h1{
+    /* .main_title__container h1{
         font-size: 50px;
     }
 
@@ -184,7 +178,7 @@ main{
         justify-content: center;
         align-items: center;
     }
-
+ */
 
 
 }

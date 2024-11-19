@@ -1,85 +1,3 @@
-/* MAIN SERVICIOS CSS */
-
-/* .introduccion{
-    margin-top: 1rem;
-}
-.introduccion p{
-    text-align: center;
-    letter-spacing: 1px;
-}
-.contenedor{
-    max-width: 1300px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-.contenedor h2{
-    margin-top: 2rem;
-}
-.contenedor-cartas{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1.5rem;
-}
-.carta{
-    width: 350px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-    border: 1px solid grey;
-    border-radius: 5px;
-}
-.texto{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 0.5rem;
-}
-.texto p{
-    text-align: justify;
-}
-.carta img{
-    width: 100%;
-    height: 50%;
-}
-.valores{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-.valor{
-    border: none;
-    border-radius: 5px;
-    padding: 2rem;
-    text-align: justify;
-}
-b{
-    letter-spacing: 1px;
-}
-
-.title-servicio{
-    color: #FFF;
-    font-family: "Roboto", system-ui;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .text-servicio{
-    color: #FFF;
-    font-family: "Roboto", system-ui;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  } */
 
   .card-text-servicios{
     font-family: "Noto Serif", serif;
@@ -94,40 +12,11 @@ b{
 }
 
 /* MEDIA QUERIES SERVICIOS*/
-
 @media screen and (max-width: 768px){
-    /* .introduccion{
-        padding: 1rem;
+    .card-title-servicios{
+        font-size: 20px;
     }
-    .contenedor-cartas, .valores{
-        flex-direction: column;
+    .card-text-servicios{
+        font-size: 18px;
     }
-    .carta{
-        width: 100%;
-    }
-    .carta p{
-        margin: 0px 10px 10px 10px;
-    }
-    .texto p{
-        text-align: center;
-    }
-    .valores{
-        padding: 0.5rem;
-    }
-
-  
-    .contenedor-informacion{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-    .infor{
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    .derechos-reservados{
-        text-align: center;
-    } */
-
 }
