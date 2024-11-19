@@ -96,6 +96,12 @@ main{
     align-items: center;
 }
 
+.background-image {
+    background-image: url('assets/img/home/img_header_home.png');
+    background-size: cover;
+    background-position: center;
+}
+
 
 @media (max-width: 768px){
 
