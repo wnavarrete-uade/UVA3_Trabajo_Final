@@ -59,45 +59,57 @@
       </div>
     </nav>
   </header>
-  <div class="container">
-    <div class="ask-for-shifts">
-      <div class="text">
-        <h3>Pedi tu turno aqui</h3>
-        <p>Para un servicio adecuado te pedimos que selecciones fecha y hora de preferencia y en las proximas 24 horas
-          le estara llegando un mail con la confirmacion del mismo.</p>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="text">
+          <!-- <h3>Pedi tu turno aqui</h3> -->
+          <h2 class="section-title text-title">Pedi tu turno aqui</h2>
+          <!-- <p>Para un servicio adecuado te pedimos que selecciones fecha y hora de preferencia y en las proximas 24 horas
+            le estara llegando un mail con la confirmacion del mismo.</p> -->
+            <div class="col-md-9 col-12">
+              <p class="text-description">
+                Para un servicio adecuado te pedimos que selecciones fecha y hora de preferencia y en las proximas 24 horas
+            le estara llegando un mail con la confirmacion del mismo.
+              </p>
+            </div>
+        </div>
       </div>
-      <form id="formulario" class="form">
-        <div>
-          <label for="Nombre">Nombre</label>
-          <input type="text" placeholder="Nombre" id="Nombre">
-        </div>
-        <div>
-          <label for="Apellido">Apellido</label>
-          <input type="text" placeholder="Apellido" id="Apellido">
-        </div>
-        <div>
-          <label for="Email">Email</label>
-          <input type="email" placeholder="hola@gmail.com" id="Email">
-        </div>
-        <div class="datetime">
-          <div class="Date">
-            <label for="Date">Fecha</label>
-            <input type="date" id="Date">
-          </div>
-          <div class="Time">
-            <label for="Time">Hora</label>
-            <input type="time" id="Time">
-          </div>
-        </div>
-        <div>
-          <label>Adicionales</label>
-          <textarea placeholder="Describe tus adicionales"></textarea>
-        </div>
-        <div>
-          <button type="submit" class="btn-form" id="Enviar">Agendar</button>
-        </div>
-        <div id="error-message"></div>
-      </form>
+      <div class="col-md-6">
+          <form id="formulario" class="form">
+            <div class="mb-3">
+              <label for="Nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="Nombre" placeholder="Nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="Apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="Apellido" placeholder="Apellido" required>
+            </div>
+            <div class="mb-3">
+              <label for="Email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="Email" placeholder="hola@gmail.com" required>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="Date" class="form-label">Fecha</label>
+                <input type="date" class="form-control" id="Date" required>
+              </div>
+              <div class="col-md-6">
+                <label for="Time" class="form-label">Hora</label>
+                <input type="time" class="form-control" id="Time" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="Adicionales" class="form-label">Adicionales</label>
+              <textarea class="form-control" id="Adicionales" placeholder="Describe tus adicionales" rows="3"></textarea>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary" id="Enviar">Agendar</button>
+            </div>
+            <div id="error-message" class="mt-3 text-danger"></div>
+          </form>
+        </form>
+      </div>
     </div>
   </div>
   <footer class="footer mt-auto py-3 bg-orange text-footer d-none d-sm-block">

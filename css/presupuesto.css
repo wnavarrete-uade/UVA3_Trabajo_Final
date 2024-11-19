@@ -1,19 +1,19 @@
 /* MAIN PRESUPUESTO CSS */
-.main-budget-container{
+/* .main-budget-container{
     max-width: 1300px;
     margin: 3.5rem auto;
     display: flex;
     flex-direction: column;
     gap: 4rem;
-}
-.main-budget-container hr{
+} */
+/* .main-budget-container hr{
     border: 2px solid #B0B0B0;
-}
-.calculate-budget{
+} */
+/* .calculate-budget{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
+} */
 /* .calculate-budget :nth-child(1){
     font-family: var(--font-family-primary);
     font-size: var(--sixth-font-size);
@@ -30,6 +30,17 @@
     text-align: left;
     width: 441px;
 } */
+
+main {
+    flex: 1;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .choose-service form{
     display: flex;
     align-items: center;

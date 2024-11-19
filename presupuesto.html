@@ -4,155 +4,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chevrolet My Care | Calcular presupuesto</title>
-  <!-- <link rel="stylesheet" href="../css/estilos-comunes.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="icon" href="assets/img/img_favicon.png" type="image/x-icon">
   <link
-  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-  rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-  rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-  crossorigin="anonymous"></script>
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/general.css">
 
   <link rel="stylesheet" href="css/presupuesto.css">
-  <link rel="stylesheet" href="css/general.css">
+  <!-- <link rel="stylesheet" href="css/general.css"> -->
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand text-white" href="index.html">
-              <img height="70" src="assets/img/img_logo.png" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" aria-label="Toggle navigation icon"></span>
-            </button>
-            <div class="collapse navbar-collapse custom-navbar-collapse text-center" id="navbarScroll">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link active" href="presupuesto.html">Presupuesto</a>
-                    </li>
-                    <li class="nav-item px-2">
-                    <a class="nav-link" href="mantenimiento.html">Mantenimiento</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="galeria.html">Galeria</a>
-                    </li>
-                    <li class="nav-item px-2">
-                      <a class="btn button-orange px-4" href="turno.html">Agenda un turno</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand text-white" href="index.html">
+          <img height="70" src="assets/img/img_logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" aria-label="Toggle navigation icon"></span>
+        </button>
+        <div class="collapse navbar-collapse custom-navbar-collapse text-center" id="navbarScroll">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+            <li class="nav-item px-2">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link active" href="presupuesto.html">Presupuesto</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="mantenimiento.html">Mantenimiento</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="btn button-orange px-4" href="turno.html">Agenda un turno</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-</header>
-  <main class="container mt-5">
-    <div class="calculate-budget">
-      <h2 class="section-title text-title">Calcular presupuesto</h2>
-      <p class="text-description">
-        Este es un presupuesto estimado para comprender los servicios
-        brindados. Por favor agenda un turno para asesoramiento personalizado.
-      </p>
-    </div>
-    <div class="choose-service">
-      <form id="budget-form">
-        <div>
-          <label for="carModel">Modelo de Auto:</label>
-          <input type="text" class="form-control" id="carModel" placeholder="Ejemplo: Chevrolet Cruze" required />
+  </header>
+  <main>
+    <div class="container mt-5">
+      <div class="container">
+        <h2 class="section-title text-title">Calcular presupuesto</h2>
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <p class="text-description">
+              Este es un presupuesto estimado para comprender los servicios
+              brindados. Por favor agenda un turno para asesoramiento personalizado.
+            </p>
+          </div>
         </div>
-        <div>
-          <label for="form-select">Tipo de Servicio:</label>
-          <select class="form-select" aria-label="Seleccione un servicio" required>
-            <option value="0">Seleccione un servicio</option>
-            <option value="1500">Revisión de frenos - $1500</option>
-            <option value="2000">Cambio de aceite - $2000</option>
-            <option value="3000">Reparación de transmisión - $3000</option>
-            <option value="4000">Reparación de motor - $4000</option>
-          </select>
+      </div>
+      <div class="choose-service mt-5">
+        <form id="budget-form">
+          <div>
+            <label for="carModel">Modelo de Auto:</label>
+            <input type="text" class="form-control" id="carModel" placeholder="Ejemplo: Chevrolet Cruze" required />
+          </div>
+          <div>
+            <label for="form-select">Tipo de Servicio:</label>
+            <select class="form-select" aria-label="Seleccione un servicio" required>
+              <option value="0">Seleccione un servicio</option>
+              <option value="1500">Revisión de frenos - $1500</option>
+              <option value="2000">Cambio de aceite - $2000</option>
+              <option value="3000">Reparación de transmisión - $3000</option>
+              <option value="4000">Reparación de motor - $4000</option>
+            </select>
+          </div>
+          <div class="btns mt-4">
+            <button type="button" onclick="calculateBudget()" class="button-black ">Calcular presupuesto</button>
+            <button type="button" onclick="clearForm()" class="clear">Limpiar</button>
+          </div>
+        </form>
+      </div>
+      <hr class="my-5" />
+      <div class="details">
+        <h2 class="section-title text-subtitle">Detalle del presupuesto</h2>
+        <div class="row">
+          <div class="col-md-4"><strong>Modelo de auto:</strong> <span id="carModelOutput"></span></div>
+          <div class="col-md-4"><strong>Servicio:</strong> <span id="serviceTypeOutput"></span></div>
+          <div class="col-md-4"><strong>Total:</strong> $<span id="totalOutput">0</span></div>
         </div>
-        <div class="btns mt-4">
-          <button type="button" onclick="calculateBudget()" class="button-black ">Calcular presupuesto</button>
-          <button type="button" onclick="clearForm()" class="clear">Limpiar</button>
-        </div>
-      </form>
-    </div>
-    <hr />
-    <div class="details">
-      <h2 class="section-title text-title">Detalle del presupuesto</h2>
-      <div>
-        <p><strong>Modelo de auto:</strong> <span id="carModelOutput"></span></p>
-        <p><strong>Servicio:</strong> <span id="serviceTypeOutput"></span></p>
-        <p><strong>Total:</strong> $<span id="totalOutput">0</span></p>
       </div>
     </div>
   </main>
   <footer class="footer mt-auto py-3 bg-orange text-footer d-none d-sm-block">
     <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-9">
-                <div class="row">
-                    <div class="col-6"> <span class="text-bold">Materia:</span> Diseño y desarrollo web</div>
-                    <div class="col-3">Curso 492766</div>
-                    <div class="col-3 text-center">Grupo 5</div>
-                </div>
-                <div class="row pt-3">
-                    <div class="col-12 text-center">Todos los derechos reservados - Sitio desarrollado para uso
-                        educativo - 2024
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <img class="" width="50%" src="assets/img/portafolio/Logo-UADE.png" alt="">
-            </div>
+      <div class="row justify-content-between">
+        <div class="col-9">
+          <div class="row">
+            <div class="col-12 mt-2">Integrantes: Walter Navarrete / Juan Giulietti - Sitio del grupo</div>
+            <div class="col-12 mt-2">Trabajo Grupal - Materia Diseño y Desarrollo Web - Curso 492766 - Grupo
+              5</div>
+          </div>
         </div>
+        <div class="col-3">
+          <img class="" width="50%" src="assets/img/logo_uade_white.png" alt="">
+        </div>
+      </div>
     </div>
     </div>
-</footer>
-<footer class="footer mt-auto py-3 bg-orange text-footer d-block d-sm-none">
+  </footer>
+  <footer class="footer mt-auto py-3 bg-orange text-footer d-block d-sm-none">
     <div class="container">
-        <div class="row mb-3">
-            <div class="col-12 text-center">Todos los derechos reservados - <br> Sitio desarrollado para uso
-                educativo - 2024
-            </div>
+      <div class="">
+        <div class="row mb-1 ml-custom">
+          <div class="col-12">Integrantes: Walter Navarrete / Juan Giulietti - Sitio del grupo </div>
         </div>
-        <div class="">
-            <div class="row mb-1 ml-custom">
-                <div class="col-12"> <span class="text-bold">Materia:</span> Diseño y desarrollo web</div>
-            </div>
-            <div class="row mb-3 text-center">
-                <div class="col-6">Curso 492766</div>
-                <div class="col-6">Grupo 5</div>
-            </div>
+        <div class="row mb-1 ml-custom">
+          <div class="col-12">Trabajo Grupal - Materia Diseño y Desarrollo Web - Curso 492766 - Grupo 5 </div>
         </div>
-        <div class="row">
-            <div class="col-12 text-center">
-                <img height="50" src="assets/img/portafolio/Logo-UADE.png" alt="">
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <img height="50" src="assets/img/logo_uade_white.png" alt="">
         </div>
+      </div>
     </div>
-</footer>
+  </footer>
+
   <script src="../scripts.js"></script>
 </body>
+
 </html>
