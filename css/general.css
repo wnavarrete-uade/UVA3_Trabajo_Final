@@ -1,0 +1,84 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  font-family: "Roboto", system-ui;
+  text-decoration: none;
+  list-style: none;
+}
+
+.bg-orange {
+  background-color: #F04100 !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-nav .nav-link {
+  color: #F04100 !important;
+  font-size: 20px;
+}
+
+.navbar a.active {
+  color: #000000 !important;
+}
+
+.text-footer {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.button-orange {
+  background-color: #F04100;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button-black {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* .button-black {
+  background-color: #000000;
+  color: #ffffff;
+ 
+} */
+
+.text-description {
+  color: #8a6b61;
+  font-size: 22px;
+}
+
+.text-title {
+  font-family: "Noto Serif", serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.text-subtitle {
+  font-family: "Noto Serif", serif;
+  font-size: 35px;
+  font-weight: bold;
+}
