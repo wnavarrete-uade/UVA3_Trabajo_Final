@@ -46,12 +46,15 @@ document.getElementById("formulario").addEventListener("submit", function(event)
   const successMessage = document.getElementById('success-message');
   if (successMessage) {
     successMessage.remove();
+
   }
   const newSuccessMessage = document.createElement('div');
   newSuccessMessage.id = 'success-message';
   newSuccessMessage.textContent = "¡Formulario enviado correctamente!";
   newSuccessMessage.style.color = 'green';
   document.getElementById('formulario').appendChild(newSuccessMessage);
+   // Limpiar el formulario
+   document.getElementById("formulario").reset();
 });
 
 function showError(message) {

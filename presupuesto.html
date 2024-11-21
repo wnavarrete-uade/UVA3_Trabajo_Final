@@ -79,31 +79,37 @@
         <form id="budget-form">
           <div>
             <label for="carModel">Modelo de Auto:</label>
-            <input type="text" class="form-control" id="carModel" placeholder="Ejemplo: Chevrolet Cruze" required />
+            <select class="form-select" id="carModel" required>
+              <option value="">Selecciona un modelo de auto</option>
+              <option value="chevrolet1950">Chevrolet 1950</option>
+              <option value="chevrolet1970">Chevrolet 1970</option>
+              <option value="chevrolet1980">Chevrolet 1980</option>
+              <option value="chevrolet1990">Chevrolet 1990</option>
+              <option value="chevrolet2000">Chevrolet 2000</option>
+            </select>
           </div>
           <div>
-            <label for="form-select">Tipo de Servicio:</label>
-            <select class="form-select" aria-label="Seleccione un servicio" required>
+            <label for="serviceType">Tipo de Servicio:</label>
+            <select class="form-select" id="serviceType" required>
               <option value="0">Seleccione un servicio</option>
-              <option value="1500">Revisión de frenos - $1500</option>
-              <option value="2000">Cambio de aceite - $2000</option>
-              <option value="3000">Reparación de transmisión - $3000</option>
-              <option value="4000">Reparación de motor - $4000</option>
+              <option value="cambioAceite">Cambio de aceite</option>
+              <option value="revisionFrenos">Revisión de frenos</option>
+              <option value="reparacionTransmision">Reparación de transmisión</option>
             </select>
           </div>
           <div class="btns mt-4">
-            <button type="button" onclick="calculateBudget()" class="button-black ">Calcular presupuesto</button>
-            <button type="button" onclick="clearForm()" class="clear">Limpiar</button>
+            <button type="button" class="button-black">Calcular presupuesto</button>
+            <button type="button" class="clear">Limpiar</button>
           </div>
         </form>
       </div>
       <hr class="my-5" />
       <div class="container my-5">
         <h2 class="section-title text-subtitle">Detalle del presupuesto</h2>
-        <div class="row">
-          <div class="col-md-4"><strong>Modelo de auto:</strong> <span id="carModelOutput"></span></div>
-          <div class="col-md-4"><strong>Servicio:</strong> <span id="serviceTypeOutput"></span></div>
-          <div class="col-md-4"><strong>Total:</strong> $<span id="totalOutput">0</span></div>
+        <div class="row mt-3">
+          <div class="col-md-4">Modelo de auto: <br><span id="carModelOutput" class="text-subtitle"></span></div>
+          <div class="col-md-4">Servicio: <br><span id="serviceTypeOutput" class="text-subtitle"></span></div>
+          <div class="col-md-4">Total: <br>$<span id="totalOutput" class="text-subtitle">0</span></div>
         </div>
       </div>
     </div>
@@ -113,7 +119,9 @@
       <div class="row justify-content-between">
         <div class="col-9">
           <div class="row">
-            <div class="col-12 mt-2">Integrantes: Walter Navarrete / Juan Giulietti - <a href="https://wnavarrete-uade.github.io/UVA2_Trabajo_Integrador_V2/" target="_blank">Sitio del grupo</a> </div>
+            <div class="col-12 mt-2">Integrantes: Walter Navarrete / Juan Giulietti - <a
+                href="https://wnavarrete-uade.github.io/UVA2_Trabajo_Integrador_V2/" target="_blank">Sitio del grupo</a>
+            </div>
             <div class="col-12 mt-2">Trabajo Grupal - Materia Diseño y Desarrollo Web - Curso 492766 - Grupo
               5</div>
           </div>
@@ -129,7 +137,9 @@
     <div class="container">
       <div class="">
         <div class="row mb-1 ml-custom my-3">
-          <div class="col-12">Integrantes: Walter Navarrete / Juan Giulietti - <a href="https://wnavarrete-uade.github.io/UVA2_Trabajo_Integrador_V2/" target="_blank">Sitio del grupo</a> </div>
+          <div class="col-12">Integrantes: Walter Navarrete / Juan Giulietti - <a
+              href="https://wnavarrete-uade.github.io/UVA2_Trabajo_Integrador_V2/" target="_blank">Sitio del grupo</a>
+          </div>
         </div>
         <div class="row mb-1 ml-custom my-3">
           <div class="col-12">Trabajo Grupal - Materia Diseño y Desarrollo Web - Curso 492766 - Grupo 5 </div>
@@ -145,36 +155,36 @@
 
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/calculadoraPresupuesto.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/calculadoraPresupuesto.js"></script>
 
   <script>
     $(document).ready(function () {
-        $('.navbar-nav .nav-link').on('click', function () {
-            $('.navbar-collapse').collapse('hide');
-        });
+      $('.navbar-nav .nav-link').on('click', function () {
+        $('.navbar-collapse').collapse('hide');
+      });
 
-        $('.navbar-toggler').click(function () {
+      $('.navbar-toggler').click(function () {
 
-            $('.navbar-collapse').collapse('toggle');
-        });
+        $('.navbar-collapse').collapse('toggle');
+      });
 
-        $('.navbar-nav .nav-link').on('click', function () {
-            $('.navbar-collapse').collapse('hide');
-        });
+      $('.navbar-nav .nav-link').on('click', function () {
+        $('.navbar-collapse').collapse('hide');
+      });
 
-        $('.navbar-toggler').click(function () {
-            $('.navbar-collapse').collapse('toggle');
-        });
+      $('.navbar-toggler').click(function () {
+        $('.navbar-collapse').collapse('toggle');
+      });
 
-        $('#btnMasInfo').click(function () {
-            $('html, body').animate({
-                scrollTop: $('#masInfo').offset().top
-            }, 1000);
-        });
+      $('#btnMasInfo').click(function () {
+        $('html, body').animate({
+          scrollTop: $('#masInfo').offset().top
+        }, 1000);
+      });
 
     });
-</script>
+  </script>
 
 </body>
 

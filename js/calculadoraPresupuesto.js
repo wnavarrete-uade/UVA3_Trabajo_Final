@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Función para calcular el presupuesto
     function calculateBudget() {
+      
         // Obtener los valores seleccionados
         const carModel = document.getElementById("carModel").value;
         const serviceType = document.getElementById("serviceType").value;
@@ -53,7 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
   
         // Mostrar los resultados en la página
-        const modelName = carModel.replace(/[0-9]/g, ''); // Limpiar el número para mostrar solo el modelo, ej. chevrolet
+        const modelName = carModel // Limpiar el número para mostrar solo el modelo, ej. chevrolet
+        document.getElementById("carModelOutput").textContent = modelName;
         document.getElementById("carModelOutput").textContent = modelName;
         document.getElementById("serviceTypeOutput").textContent = formatServiceName(serviceType); // Formato amigable para el servicio
         document.getElementById("totalOutput").textContent = servicePrice; // Mostrar el precio total
